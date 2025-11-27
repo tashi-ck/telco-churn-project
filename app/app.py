@@ -20,8 +20,8 @@ st.write("Enter customer details and predict whether they will churn.")
 # ------------------------------------------------------
 @st.cache_resource
 def load_model():
-    model = pickle.load(open("../models/churn_model.pkl", "rb"))
-    scaler = pickle.load(open("../models/scaler.pkl", "rb"))
+    model = pickle.load(open("models/churn_model.pkl", "rb"))
+    scaler = pickle.load(open("models/scaler.pkl", "rb"))
     return model, scaler
 
 model, scaler = load_model()
@@ -30,7 +30,7 @@ model, scaler = load_model()
 # All final columns after feature_engineering.ipynb
 # (IMPORTANT: must match df.columns after get_dummies)
 # ------------------------------------------------------
-final_columns = pickle.load(open("../models/columns.pkl", "rb"))
+final_columns = pickle.load(open("models/columns.pkl", "rb"))
 
 # ------------------------------------------------------
 # User Input Form
