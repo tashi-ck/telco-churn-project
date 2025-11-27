@@ -3,8 +3,6 @@ import numpy as np
 import pandas as pd
 import pickle
 
-model = pickle.load(open("models/churn_model.pkl", "rb"))
-
 # ------------------------------------------------------
 # Page Config
 # ------------------------------------------------------
